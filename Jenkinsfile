@@ -1,3 +1,7 @@
+@library('roboshop')_
+test1.new1()
+
+
 pipeline {
     agent any
          stages {
@@ -18,21 +22,12 @@ pipeline {
                    }
                    }
               }
-               stage (' access variables from different stage') {
-                   steps {
-                   script {
-                   print "drg = ${drg}"
-                   }
-                   }
-               }
-               stage ('calling function') {
-                    steps {
-                    script {
-                    file.new1 ()
-                    }
-                    }
-              }
-
          }
 }
+
+
+
+
+
+
 
