@@ -27,7 +27,9 @@ pipeline {
                }
                stage ('calling function') {
                     steps {
-                    file.}}
+                    file.new1 ()
+                    }
+              }
 
          }
 }
