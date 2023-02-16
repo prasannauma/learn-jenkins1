@@ -27,8 +27,11 @@ pipeline {
                    }
                    }
              }
-
-
+             post {
+                  always {
+                  echo 'try again'
+                  }
+             }
          }
 }
 
