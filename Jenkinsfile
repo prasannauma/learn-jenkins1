@@ -25,6 +25,9 @@ pipeline {
                    }
                    }
                }
+               stage ('calling function') {
+                    steps {
+                    file.}}
 
          }
 }
