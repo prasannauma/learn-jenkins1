@@ -1,7 +1,5 @@
 @library('roboshop')_
 test1.new1()
-
-
 pipeline {
     agent any
          stages {
@@ -22,6 +20,15 @@ pipeline {
                    }
                    }
               }
+              stage (' access variables from another stage') {
+                   steps {
+                   script {
+                   print "abc = ${abc} "
+                   }
+                   }
+             }
+
+
          }
 }
 
