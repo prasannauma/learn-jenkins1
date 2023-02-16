@@ -1,7 +1,7 @@
 @Library('roboshop') _
 
  def xyz = "Some Data"
-test1.new1()
+ test1.new1()
 
 
 
