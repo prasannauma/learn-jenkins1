@@ -6,10 +6,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
+    post {
+    always {
+    cleanWs()
+    }
+    }
     }
 }
-
-
-
-
 
