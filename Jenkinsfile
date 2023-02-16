@@ -1,6 +1,7 @@
-@library('roboshop') _
+@Library('roboshop') _
 
-test1.new1 ()
+env.xyz = "Some Data"
+test1.new1()
 
 
 
