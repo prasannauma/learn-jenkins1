@@ -1,30 +1,31 @@
 pipeline {
     agent any
-    stages {
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-        stage ('delaring variables at stage level') {
-            steps {
-                script {
-                def abc = "hello"
-                def a = 10
-                print "abc = {$abc}"
-                print  "a = {$a}"
-                }
-            }
-       }
-    }
-     post {
-            always {
-                cleanWs()
-            }
-       }
-    }
+         stages {
+              stage ('declaring variables in this stage') {
+                  steps {
+                  script {
+                  abc = "hello"
+                  xyz = "how r u"
+                  drg =  "take care"
+                  print "abc = ${abc}"
+                  }
+                  }
+              }
+              stage (' access variables from another stage') {
+                   steps {
+                   script {
+                   print "xyz = ${xyz} "
+                   }
+                   }
+              }
+               stage (' access variables from another stage') {
+                   steps {
+                   script {
+                   print "drg = ${drg}"
+                   }
+                   }
+               }
 
-
-
-
+         }
+}
 
