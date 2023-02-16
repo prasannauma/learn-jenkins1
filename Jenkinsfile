@@ -18,7 +18,7 @@ pipeline {
                    }
                    }
               }
-               stage (' access variables from another stage') {
+               stage (' access variables from different stage') {
                    steps {
                    script {
                    print "drg = ${drg}"
