@@ -5,7 +5,7 @@ pipeline {
               steps {
                    script {
                        def a = "hello"
-                       def b = "how r u"
+                       env.b = "how r u"
                        print  "a = ${a}"
                   }
               }
