@@ -17,9 +17,11 @@ pipeline {
                        print "b = ${b}"
                    }
               }
+              steps {
                    script {
                        print "c= ${c}"
                    }
+              }
          }
     }
 }
