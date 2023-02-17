@@ -13,11 +13,9 @@ pipeline {
          stage (' accessing a variable') {
               steps {
                    script {
-                       env.c = "im good"
+                       def c = "im good"
                        print "b = ${b}"
                    }
-              }
-              steps {
                    script {
                        print "c= ${c}"
                    }
