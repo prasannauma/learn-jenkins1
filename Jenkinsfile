@@ -8,6 +8,7 @@ pipeline {
              b = how r u
              print " a = ${a}"
              }
+             }
         }
         stage (' accessing a variable') {
             steps {
