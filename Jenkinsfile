@@ -12,18 +12,23 @@ pipeline {
          }
          stage (' accessing a variable') {
               steps {
-                  script {
-                      env.c = "im good"
-                      print "b = ${b}"
-                  }
+                   script {
+                       env.c = "im good"
+                       print "b = ${b}"
+                   }
               }
+                   script {
+                       print "c= ${c}"
+                   }
          }
-         script {
-             print "c= ${c}"
-             }
-         }
-   }
+    }
 }
+
+
+
+
+
+
 
 
 
