@@ -12,7 +12,7 @@ pipeline {
         }
         stage (' accessing a variable') {
              steps {
-               print "b = ${b}"
+             print "b = ${b}"
             }
         }
     }
