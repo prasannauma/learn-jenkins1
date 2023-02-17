@@ -4,8 +4,8 @@ pipeline {
          stage ('declare a varible here') {
               steps {
                    script {
-                       def a = hello
-                       def b = how r u
+                       def a = "hello"
+                       def b = "how r u"
                        print  "a = ${a}"
                   }
               }
