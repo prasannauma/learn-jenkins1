@@ -21,6 +21,18 @@ pipeline {
                    }
               }
          }
+         stage ('if condition') {
+             steps {
+                 script {
+                     if (c == "im good") {
+                     print "yes"
+                     }
+                     else {
+                     print "no"
+                     }
+                 }
+             }
+         }
     }
 }
 
