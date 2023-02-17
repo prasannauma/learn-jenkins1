@@ -3,16 +3,16 @@ pipeline {
     stages{
          stage ('declare a varible here') {
               steps {
-                  script {
-                  def a = hello
-                  def b = how r u
-                  print  "a = ${a}"
+                   script {
+                       def a = hello
+                       def b = how r u
+                       print  "a = ${a}"
                   }
               }
          }
          stage (' accessing a variable') {
               steps {
-              print "b = ${b}"
+                  print "b = ${b}"
               }
          }
     }
