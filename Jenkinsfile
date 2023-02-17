@@ -1,5 +1,5 @@
 @Library('roboshop') _
-def xyz = "Some Data"
+env.xyz = "Some Data
 test1.new1()
 
 
